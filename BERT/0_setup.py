@@ -1,11 +1,20 @@
+# Check that all required packages are installed.
+
 import torch
-from transformers import BertTokenizer, BertModel
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.decomposition import PCA
+import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+from transformers import BertTokenizer, BertForMaskedLM, Trainer, TrainingArguments
+from transformers import DataCollatorForLanguageModeling
+from datasets import Dataset
+from sentence_transformers import SentenceTransformer
 
 print("PyTorch version:", torch.__version__)
-print("All imports successful.")
+print("CUDA available:", torch.cuda.is_available())
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Using device: {device}")
+
+# Check that openpyxl is available (needed for reading .xlsx)
+import openpyxl
+print("openpyxl version:", openpyxl.__version__)
+
+print("\nAll imports successful.")

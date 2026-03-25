@@ -1,0 +1,170 @@
+[
+  {
+    "sentence": "And God sawe the [MASK] that it was good.",
+    "expected": "light",
+    "top_prediction": "fact",
+    "top_score": 0.17630939185619354,
+    "in_top_5": false,
+    "all_predictions": [
+      "fact",
+      "sign",
+      "evidence",
+      "signs",
+      "proof"
+    ],
+    "all_scores": [
+      0.17630939185619354,
+      0.09588243812322617,
+      0.04051472246646881,
+      0.036952048540115356,
+      0.03219325840473175
+    ]
+  },
+  {
+    "sentence": "In the beginning God created the [MASK] and the earth.",
+    "expected": "heauen",
+    "top_prediction": "heavens",
+    "top_score": 0.4620232582092285,
+    "in_top_5": false,
+    "all_predictions": [
+      "heavens",
+      "sky",
+      "heaven",
+      "sun",
+      "stars"
+    ],
+    "all_scores": [
+      0.4620232582092285,
+      0.14178790152072906,
+      0.10803012549877167,
+      0.05043463036417961,
+      0.027278810739517212
+    ]
+  },
+  {
+    "sentence": "The Lord God also made the man of the [MASK] of the grounde.",
+    "expected": "dust",
+    "top_prediction": "color",
+    "top_score": 0.03168035298585892,
+    "in_top_5": false,
+    "all_predictions": [
+      "color",
+      "earth",
+      "heart",
+      "land",
+      "lord"
+    ],
+    "all_scores": [
+      0.03168035298585892,
+      0.02744879387319088,
+      0.017175158485770226,
+      0.017007363960146904,
+      0.015094210393726826
+    ]
+  },
+  {
+    "sentence": "And the serpent saide vnto the [MASK], Ye shall not die.",
+    "expected": "woman",
+    "top_prediction": "earth",
+    "top_score": 0.03722023218870163,
+    "in_top_5": false,
+    "all_predictions": [
+      "earth",
+      "serpent",
+      "lord",
+      "sky",
+      "world"
+    ],
+    "all_scores": [
+      0.03722023218870163,
+      0.036531321704387665,
+      0.02916945144534111,
+      0.022577570751309395,
+      0.020089391618967056
+    ]
+  },
+  {
+    "sentence": "And God [MASK] them, saying, Bring foorth fruite and multiplie.",
+    "expected": "blessed",
+    "top_prediction": "blessed",
+    "top_score": 0.08022775501012802,
+    "in_top_5": true,
+    "all_predictions": [
+      "blessed",
+      "sent",
+      "bless",
+      "welcomed",
+      "heard"
+    ],
+    "all_scores": [
+      0.08022775501012802,
+      0.07801313698291779,
+      0.044972971081733704,
+      0.036567509174346924,
+      0.02852286398410797
+    ]
+  },
+  {
+    "sentence": "The Lord is my [MASK], I shall not want.",
+    "expected": "shepherd",
+    "top_prediction": "lord",
+    "top_score": 0.169549360871315,
+    "in_top_5": false,
+    "all_predictions": [
+      "lord",
+      "father",
+      "god",
+      "friend",
+      "brother"
+    ],
+    "all_scores": [
+      0.169549360871315,
+      0.1420385092496872,
+      0.08470635116100311,
+      0.05719956010580063,
+      0.03489051014184952
+    ]
+  },
+  {
+    "sentence": "Thou shalt not [MASK]: thou shalt not commit adulterie.",
+    "expected": "kill",
+    "top_prediction": "lie",
+    "top_score": 0.060334015637636185,
+    "in_top_5": true,
+    "all_predictions": [
+      "lie",
+      "think",
+      "sleep",
+      "die",
+      "kill"
+    ],
+    "all_scores": [
+      0.060334015637636185,
+      0.032968249171972275,
+      0.03292464092373848,
+      0.02913055568933487,
+      0.02729569375514984
+    ]
+  },
+  {
+    "sentence": "And God called the dry land, [MASK], and he called the gathering together of the waters, Seas.",
+    "expected": "earth",
+    "top_prediction": "land",
+    "top_score": 0.13160422444343567,
+    "in_top_5": false,
+    "all_predictions": [
+      "land",
+      "sea",
+      "water",
+      "seas",
+      "lands"
+    ],
+    "all_scores": [
+      0.13160422444343567,
+      0.0920170471072197,
+      0.07892071455717087,
+      0.07054397463798523,
+      0.057959314435720444
+    ]
+  }
+]
