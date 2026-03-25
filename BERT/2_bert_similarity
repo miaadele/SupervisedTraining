@@ -1,0 +1,47 @@
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+
+sentences = [
+    "The Virginia Companie did advance traffique beyond the seas.",
+    "The Virginia Company did advance traffic beyond the seas.",
+    "The Virginia Company promoted overseas trade.",
+    "The merchants of London traded in silks and spices.",
+    "London merchants engaged in the silk and spice trade.",
+    "The harvest was plentiful this year.",
+    "Parliament assembled to debate the new taxation.",
+]
+
+labels = [
+    "VA Co. (archaic spelling)",
+    "VA Co. (modern spelling)",
+    "VA Co. (paraphrase)",
+    "Merchants (version A)",
+    "Merchants (version B)",
+    "Harvest (unrelated)",
+    "Parliament (unrelated)",
+]
+
+# Load a sentence-transformer model
+# all-MiniLM-L6-v2 is a lightweight, fast model good for similarity tasks
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+# Encode all sentences into 384-dimensional vectors
+embeddings = model.encode(sentences) #the transformer [processes the sentence in several stages: tokenization, self-attention, pooling
+
+print(f"Embedding shape: {embeddings.shape}")
+print(f"Each sentence is now a vector of {embeddings.shape[1]} numbers.\n")
+
+# Compute BERT-based similarity
+bert_sim = cosine_similarity(embeddings)
+
+print("BERT Cosine Similarity Matrix:\n")
+print(f"{'':>30s}", end="")
+for i in range(len(sentences)):
+    print(f"  [{i}]", end="")
+print()
+
+for i in range(len(sentences)):
+    print(f"{labels[i]:>30s}", end="")
+    for j in range(len(sentences)):
+        print(f" {bert_sim[i][j]:5.2f}", end="")
+    print()
