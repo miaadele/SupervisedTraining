@@ -1,15 +1,9 @@
 **GOAL**: train a supervised classifier that learns to recognize and distinguish Early Modern texts that engage in merchant-related discourse versus those that do not
 ***
-In the **train_supervised_classifier_week8** folder:
-Use Word2Vec to
-1. Define the concept "merchant" to use as the "seed" concept
-2. Segment texts into chunks
-3. Create a weakly supervised training dataset using a seed term and related terms
-
-   
-   This is accomplished with a tiered search-word list, weak labels, CORE v. NEG dataset.
-
-4. Train a baseline text classifier using TF-IDF features and logistic regression
+In the **BERT** folder:
+1. Use baseline BERT model to practice tokenization, work with PCA visualization, and understand masked language modeling.
+2. Fine-tune the base model with the Geneva Bible.
+3. Cluster documents to disscover the types of texts an unknown Early Modern archive contains.
 ***
 In the **LogisticRegression** folder:
 1. script for baseline model, logistic regression  with L2 regularization (ridge-style shrinkage)
@@ -62,3 +56,15 @@ Results:
 - the baseline model overproduced certain contemporary or highly frequent place names and under recognized Early Modern trade locations.
 - the fine-tuned model reduces some modern bias while increasing recognition of historically salient geographic terms and multi-word colonial phrases
 - there are small artifacts of overfitting
+***
+In the **train_supervised_classifier_week8** folder:
+Use Word2Vec to
+1. Define the concept "merchant" to use as the "seed" concept
+2. Segment texts into chunks
+3. Create a weakly supervised training dataset using a seed term and related terms
+
+   
+   This is accomplished with a tiered search-word list, weak labels, CORE v. NEG dataset.
+
+4. Train a baseline text classifier using TF-IDF features and logistic regression
+***
